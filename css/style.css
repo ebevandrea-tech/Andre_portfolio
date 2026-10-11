@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --couleur-principale: #204ac6;
+  --couleur-fonce: #1b2a41;
+  --couleur-fond: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--couleur-fonce);
+  background-color: var(--couleur-fond);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--couleur-principale);
+  outline-offset: 2px;
+}
+
+#accueil {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.carte-projet {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carte-projet:hover {
+  transform: translateY(-10px);
+}
